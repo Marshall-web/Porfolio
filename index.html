@@ -3,227 +3,526 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nurrideen Dauda Marshall | Portfolio</title>
+    <meta name="description" content="Nurrideen Dauda Marshall - Computer Science & Engineering Student and Web Developer portfolio showcasing projects and skills.">
+    <meta name="keywords" content="Nurrideen Dauda Marshall, Developer, Software Engineer, Portfolio, Computer Science student, Web Apps, React, Python">
+    <meta name="author" content="Nurrideen Dauda Marshall">
+    <title>Nurrideen Dauda Marshall | Software Engineer & CSE Student</title>
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+    <!-- Background Glow Orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
     <!-- Navigation -->
     <nav>
-        <div class="logo">NDM</div>
+        <div class="logo" id="brandLogo">ND<span>M</span></div>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home" class="nav-link active">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Journey</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <div class="menu-toggle" id="menuToggle">
+        <div class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home">
-        <div class="hero-content">
-            <h3>Hi, I'm</h3>
-            <h1>Nurrideen Dauda Marshall</h1>
-            <div class="typewriter" id="typewriter"></div>
-            <p>A Computer Science & Engineering student passionate about crafting efficient software solutions and intuitive user experiences.</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn">View My Work</a>
-                <a href="#" class="btn btn-secondary">Download Resume</a>
+    <main>
+        <!-- Hero Section -->
+        <section id="home">
+            <div class="hero-content">
+                <span class="hero-tagline">Open to Internships & Freelancing</span>
+                <h1>Nurrideen Dauda Marshall</h1>
+                <div class="typewriter" id="typewriter"></div>
+                <p>A Computer Science & Engineering student passionate about crafting high-performance software solutions, sleek layouts, and intuitive user experiences.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn"><i class="fas fa-laptop-code"></i> View My Work</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="far fa-paper-plane"></i> Let's Connect</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="section-container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a Computer Science and Engineering student with a deep fascination for how technology can solve real-world problems. My journey in software development began with curiosity about how websites work, and it has evolved into a passion for building robust, scalable applications.</p>
-                    <p>I thrive at the intersection of front-end aesthetics and back-end logic, believing that great software is both beautiful and functional. Whether it's designing an intuitive user interface or optimizing database queries, I approach each challenge with analytical thinking and creative problem-solving.</p>
-                    <p>I'm actively seeking internships and collaborative projects where I can apply my skills, learn from experienced professionals, and contribute to meaningful solutions. I believe in continuous learning and am always exploring new technologies and best practices in software engineering.</p>
+        <!-- About Section -->
+        <section id="about" class="reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Introduction</span>
+                    <h2 class="section-title">About Me</h2>
                 </div>
-                <div ><img src="profile.jpg" alt="" class="about-image"></div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a Computer Science and Engineering student with a deep fascination for solving real-world challenges through technology. My software engineering journey began with pure curiosity about the web, which has since evolved into a focused drive to build scalable applications and smart systems.</p>
+                        <p>I thrive at the intersection of frontend aesthetics and backend robust logic, believing that superior software is both highly functional and visually engaging. Whether it's crafting high-fidelity user interfaces, designing clean database schemas, or compiling scripting tools, I approach coding with analytical precision.</p>
+                        <p>I am actively seeking internship opportunities and collaborative development environments where I can learn from senior engineers, apply my academic fundamentals, and deliver production-grade code that impacts users positively.</p>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <div class="about-image-frame">
+                            <img src="profile.jpg" alt="Nurrideen Dauda Marshall" class="about-image" id="profileImage">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="section-container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="skill-item">
-                        <i class="fab fa-python"></i>
-                        <span>Python</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-java"></i>
-                        <span>Java</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-js"></i>
-                        <span>JavaScript</span>
-                    </div>
+        <!-- Services Section -->
+        <section id="services" class="reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Expertise</span>
+                    <h2 class="section-title">What I Do</h2>
                 </div>
-                <div class="skill-category">
-                    <h3>Web Technologies</h3>
-                    <div class="skill-item">
-                        <i class="fab fa-html5"></i>
-                        <span>HTML5</span>
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <i class="fas fa-code-branch service-icon"></i>
+                        <h3>Frontend Architecture</h3>
+                        <p>Designing fast, interactive, and responsive user interfaces using modern CSS methodologies and robust Javascript frameworks like React.</p>
                     </div>
-                    <div class="skill-item">
-                        <i class="fab fa-css3-alt"></i>
-                        <span>CSS3</span>
+                    <div class="service-card glass-card">
+                        <i class="fas fa-server service-icon"></i>
+                        <h3>Backend & APIs</h3>
+                        <p>Building secure, scalable server configurations and robust APIs utilizing structured databases, Python, and modern server frameworks.</p>
                     </div>
-                    <div class="skill-item">
-                        <i class="fas fa-code"></i>
-                        <span>Responsive Design</span>
+                    <div class="service-card glass-card">
+                        <i class="fas fa-terminal service-icon"></i>
+                        <h3>Scripting & Tools</h3>
+                        <p>Automating workflows, scraping data pipelines, and writing custom tooling to streamline developer processes and save time.</p>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Concepts</h3>
-                    <div class="skill-item">
-                        <i class="fab fa-git-alt"></i>
-                        <span>Git & GitHub</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-database"></i>
-                        <span>Data Structures</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-project-diagram"></i>
-                        <span>Algorithms</span>
+                    <div class="service-card glass-card">
+                        <i class="fas fa-mobile-alt service-icon"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Structuring interfaces that load instantly and scale seamlessly across all screen sizes and mobile form factors.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="section-container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>School Web App</h3>
-                        <p>A web app for managing school operations, including student enrollment, attendance tracking, and performance analytics with real-time data visualization.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://ubaish.netlify.app" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Marshall-web/Ubaish-Web" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
+        <!-- Skills Section -->
+        <section id="skills" class="reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Proficiency</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                </div>
+                <div class="skills-grid">
+                    <!-- Column 1: Programming Languages -->
+                    <div class="skills-col glass-card">
+                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <div class="skills-list">
+                            <div class="skill-bar-container">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fab fa-js"></i> JavaScript</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fab fa-java"></i> Java</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80%"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Smart Devices Comparison</h3>
-                        <p>A modern tech comparison hub showcasing products with clean UI, detailed specs, and intuitive filtering for an optimal user experience.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://techcomparing.netlify.app/" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Marshall-web/TechCompare" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>A modern, responsive personal portfolio showcasing projects and skills. Built with clean code principles and optimized for performance across all devices.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Responsive</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Weather Analytics App</h3>
-                        <p>An interactive weather application that fetches real-time weather data and displays forecasts with beautiful visualizations and location-based recommendations.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">API Integration</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://weather-analytics-app.netlify.app/" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Marshall-web/Weather-Analytic-App" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact-content">
-            <h2>Get In Touch</h2>
-            <p>I'm currently looking for new opportunities. My inbox is always open whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-            <a href="marshallnurrideen@gmail.com" class="btn">Send Me an Email</a>
-            <div class="social-links">
-                <a href="#" class="social-link" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/Marshall-web" class="social-link" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="social-link" title="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
+                    <!-- Column 2: Web Stack -->
+                    <div class="skills-col glass-card">
+                        <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                        <div class="skills-list">
+                            <div class="skill-bar-container">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fab fa-html5"></i> HTML5 & CSS3</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fab fa-react"></i> React & Vite</span>
+                                    <span class="skill-percentage">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="78%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fas fa-database"></i> SQL & Databases</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: CS Core & Tools -->
+                    <div class="skills-col glass-card">
+                        <h3><i class="fas fa-toolbox"></i> Tools & Concepts</h3>
+                        <div class="skills-list">
+                            <div class="skill-bar-container">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fas fa-project-diagram"></i> Data Structures</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fas fa-brain"></i> Algorithms & Logic</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="82%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Milestones</span>
+                    <h2 class="section-title">My Journey</h2>
+                </div>
+                <div class="timeline">
+                    <!-- Timeline Card 1 -->
+                    <div class="timeline-item left reveal">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 - Present</span>
+                            <h3>BSc. Computer Science & Engineering</h3>
+                            <span class="timeline-subtitle">University of Cape Coast</span>
+                            <p>Studying core software engineering, operating systems, algorithm design, compiler architecture, and database theory. Maintaining active engagement in development activities.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Card 2 -->
+                    <div class="timeline-item right reveal">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024 - Present</span>
+                            <h3>Freelance Web Developer</h3>
+                            <span class="timeline-subtitle">Remote Projects</span>
+                            <p>Designing modern, responsive websites and tools for clients. Focus on translating business logic and creative wireframes into high-performance web structures.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Card 3 -->
+                    <div class="timeline-item left reveal">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024 - 2025</span>
+                            <h3>Open Source Contributor</h3>
+                            <span class="timeline-subtitle">GitHub Ecosystem</span>
+                            <p>Collaborating on open source utilities, patching bugs, refactoring UI components, and practicing robust version control within remote development teams.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="reveal">
+            <div class="section-container">
+                <div class="stats-row">
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="15">0<span>+</span></div>
+                        <div class="stat-title">Projects Done</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="8">0<span>+</span></div>
+                        <div class="stat-title">Tech Mastered</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="1200">0<span>+</span></div>
+                        <div class="stat-title">Git Commits</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="450">0<span>+</span></div>
+                        <div class="stat-title">Coffee Cups</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                <!-- Project Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Applications</button>
+                    <button class="filter-btn" data-filter="systems">Systems & Tools</button>
+                </div>
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card" data-category="web">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <i class="far fa-folder project-folder"></i>
+                                <span class="project-tech-header">Full-Stack App</span>
+                            </div>
+                            <h3>School Web App</h3>
+                            <p>A web app for managing school operations, including student enrollment, attendance tracking, and performance analytics with real-time data visualization.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://ubaish.netlify.app" class="project-link" target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Marshall-web/Ubaish-Web" class="project-link" target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (UCC Election) -->
+                    <div class="project-card glass-card" data-category="systems">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <i class="far fa-folder project-folder"></i>
+                                <span class="project-tech-header">Campus System</span>
+                            </div>
+                            <h3>UCC Election Web System</h3>
+                            <p>A highly secure real-time student body election and voting application built for campus administration, featuring visual charts and secure voter validation.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Tailwind</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-lock"></i> Campus Intranet
+                                </a>
+                                <a href="https://github.com/Marshall-web" class="project-link" target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card" data-category="web">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <i class="far fa-folder project-folder"></i>
+                                <span class="project-tech-header">Comparison Hub</span>
+                            </div>
+                            <h3>Smart Devices Hub</h3>
+                            <p>A modern tech comparison hub showcasing products with dynamic spec matrices, real-time search filtering, and details visual layout.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">REST API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://techcomparing.netlify.app/" class="project-link" target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Marshall-web/TechCompare" class="project-link" target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass-card" data-category="web">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <i class="far fa-folder project-folder"></i>
+                                <span class="project-tech-header">Personal Site</span>
+                            </div>
+                            <h3>Portfolio Website</h3>
+                            <p>A modern personal portfolio designed to present developer qualifications, timeline milestones, and clean interactive styles.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Customizers</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#home" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card glass-card" data-category="web">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <i class="far fa-folder project-folder"></i>
+                                <span class="project-tech-header">Weather API</span>
+                            </div>
+                            <h3>Weather Analytics App</h3>
+                            <p>An interactive weather application fetching geographical API coordinates and plotting climate analytics trends and local outdoor recommendations.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">REST API</span>
+                                <span class="tech-tag">CSS Grid</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://weather-analytics-app.netlify.app/" class="project-link" target="_blank" rel="noopener">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Marshall-web/Weather-Analytic-App" class="project-link" target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="reveal">
+            <div class="section-container">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <span class="section-tag">Let's Talk</span>
+                        <h2>Get In Touch</h2>
+                        <p>I'm currently looking for internships, junior positions, and freelance gigs. Whether you want to discuss a project, ask a question, or just connect, send a line and I will respond!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:marshallnurrideen@gmail.com">marshallnurrideen@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>Cape Coast, Ghana</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/Marshall-web" class="social-link" title="GitHub" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nurrideen-marshall-dauda-077b33353/" class="social-link" title="LinkedIn" target="_blank" rel="noopener">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/MarshallDeDev" class="social-link" title="Twitter" target="_blank" rel="noopener">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form glass-card" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="contactName" class="form-input" placeholder=" " required>
+                            <label for="contactName" class="form-label">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" class="form-input" placeholder=" " required>
+                            <label for="contactEmail" class="form-label">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contactMessage" class="form-input" placeholder=" " required></textarea>
+                            <label for="contactMessage" class="form-label">Message Content</label>
+                        </div>
+                        <button type="submit" class="btn" id="submitBtn"><i class="far fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>Designed & Built by Nurrideen Dauda Marshall</p>
-        <p><a href="#home">Back to Top</a></p>
+        <p>&copy; 2026 Nurrideen Dauda Marshall. All Rights Reserved.</p>
+        <p>Built with modern Vanilla HTML, CSS & JavaScript.</p>
     </footer>
 
-    <script src="index.js">
-       
-      
-    </script>
+    <!-- Theme Customizer panel widget -->
+    <div class="accent-customizer" id="accentCustomizer">
+        <button class="customizer-toggle" id="customizerToggle" aria-label="Customize accent color">
+            <i class="fas fa-palette"></i>
+        </button>
+        <div class="customizer-panel" id="customizerPanel">
+            <h4>Customize Theme</h4>
+            <div class="theme-options">
+                <span class="theme-dot dot-emerald active" data-theme="emerald" title="Emerald"></span>
+                <span class="theme-dot dot-purple" data-theme="purple" title="Purple"></span>
+                <span class="theme-dot dot-orange" data-theme="orange" title="Orange"></span>
+                <span class="theme-dot dot-blue" data-theme="blue" title="Blue"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Interactive script -->
+    <script src="index.js"></script>
 </body>
 </html>
